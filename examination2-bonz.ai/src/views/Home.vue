@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <nav class="navigation"><h1>Bonz.Ai</h1></nav>
+    <nav class="navigation"><h1>Bonz.Ai</h1> <article class="rectangle"></article></nav>
     <header class="pageHeader"></header>
     <main class="mainSection"></main>
     <footer class="pageFooter"></footer>
@@ -23,7 +23,16 @@ export default {
 <style lang="scss" scoped>
 .navigation {
   width: 100%;
+  display: flex;
   height: 132px;
   background: #00C2BA;
+  flex-direction: column;
+  .rectangle {
+  width:100%;
+  height: 11px;
+  background: #08F7FE;
+
+  } 
 }
+
 </style>
