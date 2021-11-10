@@ -1,0 +1,26 @@
+{
+  "name": "examination2-frontend-ux-ui-bonz.ai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "get-sassy": "node-sass --watch scss -o css"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patriklussi/examination2-frontend-ux-ui-bonz.ai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patriklussi/examination2-frontend-ux-ui-bonz.ai/issues"
+  },
+  "homepage": "https://github.com/patriklussi/examination2-frontend-ux-ui-bonz.ai#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "sass": "^1.43.4"
+  }
+}
