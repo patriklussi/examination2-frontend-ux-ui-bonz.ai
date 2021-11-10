@@ -41,6 +41,9 @@ export default {
   h2 {
     font-weight: 700;
   }
+  h2:hover {
+    cursor: pointer;
+  }
  
   .navWrap {
     @include center;
