@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="nav-wrapper">
       <nav class="navigation">
     <h1>Bonz.Ai</h1> 
     <div class="navWrap">

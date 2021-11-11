@@ -4,3 +4,7 @@
     align-items: center;
     
 }
+@mixin grid-column-auto {
+    display: grid;
+    grid-auto-columns: 100%;
+}
