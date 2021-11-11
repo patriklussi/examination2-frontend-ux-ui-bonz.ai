@@ -21,19 +21,56 @@
       </p>
       <button class="generalButton">Book now</button>
     </main>
-    <section class="roomView"><h1>Select Your Stay</h1>
+    <section class="roomView">
+      <h1>Select your stay</h1>
+      <section class="grid-container">
       <article class="card">
         <article class="left"> <img class="cardImg" src="../assets/photos/01-night.jpg" alt=""></article>
         <article class="right">
          
         <h2>Type 1</h2>
-        <p>Lorem Ipsum is simply dummy text of the  <br>  printing and typesetting <br> industry.</p>
+        <p>Lorem Ipsum is simply <br> dummy text of the <br> printing and typesetting <br> industry.</p>
       
       
         <button class="generalButton">Book</button>
           </article>
       </article>
-    
+
+       <article class="card">
+        <article class="left"> <img class="cardImg" src="../assets/photos/01-night.jpg" alt=""></article>
+        <article class="right">
+         
+        <h2>Type 1</h2>
+        <p>Lorem Ipsum is simply <br> dummy text of the <br> printing and typesetting <br> industry.</p>
+      
+      
+        <button class="generalButton">Book</button>
+          </article>
+      </article>
+
+       <article class="card">
+        <article class="left"> <img class="cardImg" src="../assets/photos/01-night.jpg" alt=""></article>
+        <article class="right">
+         
+        <h2>Type 1</h2>
+        <p>Lorem Ipsum is simply <br> dummy text of the <br> printing and typesetting <br> industry.</p>
+      
+      
+        <button class="generalButton">Book</button>
+          </article>
+      </article>
+       <article class="card">
+        <article class="left"> <img class="cardImg" src="../assets/photos/01-night.jpg" alt=""></article>
+        <article class="right">
+         
+        <h2>Type 1</h2>
+        <p>Lorem Ipsum is simply <br> dummy text of the <br> printing and typesetting <br> industry.</p>
+      
+      
+        <button class="generalButton">Book</button>
+          </article>
+      </article>
+    </section>
     </section>
     <Foot />
   </div>
@@ -104,29 +141,46 @@ export default {
    font-size: 2.25rem;
   
  }
- .generalButton {
  
- }
 }
 .roomView {
+  h1 {
+    margin-bottom: 51px;
+    font-size:2.25rem;
+    font-weight: 500;
+  }
   height: 859px;
-  .card {
+ display: flex;
+ justify-content: center;
+align-items: center;
+flex-direction: column;
+
+ .grid-container {
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  max-width: 1500px;
+row-gap: 51px;
+
+ 
+ }
+      .card {
     
-    display: flex;
-    .left {
+      display: flex;
+      .left {
       flex-basis: 50%;
-    display: flex;
-    }
-    .right {
-  flex-basis: 50%;
-  @include space-between;
-  
-  flex-direction: column;
+      display: flex;
+      }
+      .right {
+        margin-left:22px;
+      flex-basis: 50%;
+      @include space-between;
+
+      flex-direction: column;
       p {
         font-size: 20px;
         font-weight: 600;
-      }
-  }
+         }
+     }
    width: max-content;
   .cardImg {
    height: 250px;
