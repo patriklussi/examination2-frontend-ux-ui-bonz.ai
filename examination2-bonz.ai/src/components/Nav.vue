@@ -2,6 +2,7 @@
   <div class="nav-wrapper">
       <nav class="navigation">
     <h1>Bonz.Ai</h1> 
+    <img class="hamburgerButton" src="../assets/icons/hamburger.svg" alt="">
     <div class="navWrap">
     <h2>Stay</h2>
     <h2>About</h2>
@@ -34,7 +35,9 @@ export default {
   h2:hover {
     cursor: pointer;
   }
- 
+ .hamburgerButton {
+   display:none;
+ }
   .navWrap {
     @include center;
     width: 402px;
@@ -53,5 +56,27 @@ export default {
 
 
 } 
+}
+
+@media screen and (max-width:500px) {
+ .navigation {
+   .navWrap {
+     display:none;
+   }
+ 
+   h1 {
+     margin:0;
+   }
+   .rectangle {
+     display:none;
+   }
+   height: 60px;
+   .hamburgerButton {
+   display: block;
+   margin-right: 18px;
+   
+ }
+ }
+ 
 }
 </style>
