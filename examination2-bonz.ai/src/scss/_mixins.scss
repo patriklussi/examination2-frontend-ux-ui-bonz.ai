@@ -8,3 +8,8 @@
     display: grid;
     grid-auto-columns: 100%;
 }
+
+@mixin space-between {
+    display:flex;
+    justify-content: space-between;
+}

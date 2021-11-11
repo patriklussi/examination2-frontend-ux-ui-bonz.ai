@@ -12,10 +12,8 @@
       <p>
         Hello from Bonz.AI 👋 we are thrilled to welcome you to our AI-powered
         eco-stay at Bohuslän to the north of Gothenburg, Sweden.
-        
         <br>
         <br>
-      
          We believe in
         offering a personalized stay like none other, by bringing the ultimate
         contact-less experience to you at your finger tips - on your mobile
@@ -23,19 +21,34 @@
       </p>
       <button class="generalButton">Book now</button>
     </main>
-    <section class="roomView"></section>
-    <footer class="pageFooter"></footer>
+    <section class="roomView"><h1>Select Your Stay</h1>
+      <article class="card">
+        <article class="left"> <img class="cardImg" src="../assets/photos/01-night.jpg" alt=""></article>
+        <article class="right">
+         
+        <h2>Type 1</h2>
+        <p>Lorem Ipsum is simply dummy text of the  <br>  printing and typesetting <br> industry.</p>
+      
+      
+        <button class="generalButton">Book</button>
+          </article>
+      </article>
+    
+    </section>
+    <Footer />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Nav from "../components/Nav.vue";
+import Footer from "../components/Footer.vue";
 
 export default {
   name: "Home",
   components: {
     Nav,
+    Footer
   },
 };
 </script>
@@ -97,5 +110,31 @@ export default {
 }
 .roomView {
   height: 859px;
+  .card {
+    
+    display: flex;
+    .left {
+      flex-basis: 50%;
+    display: flex;
+    }
+    .right {
+  flex-basis: 50%;
+  @include space-between;
+  
+  flex-direction: column;
+      p {
+        font-size: 20px;
+        font-weight: 600;
+      }
+  }
+   width: max-content;
+  .cardImg {
+   height: 250px;
+   width: 100%;
 }
+}
+}
+
+
+
 </style>
