@@ -36,6 +36,13 @@
           </article>
       </article>
 
+      <article class="MobileCard">
+          <h2>Type 1</h2>
+          <img class="cardImg" src="../assets/photos/01-night.jpg" alt="">
+             <p>Lorem Ipsum is simply <br> dummy text of the <br> printing and typesetting <br> industry.</p>
+               <button class="generalButton">Book</button>
+      </article>
+
        <article class="card">
         <article class="left"> <img class="cardImg" src="../assets/photos/01-night.jpg" alt=""></article>
         <article class="right">
@@ -163,6 +170,9 @@ row-gap: 51px;
 
  
  }
+        .MobileCard {
+   display:None;
+ }
       .card {
     
       display: flex;
@@ -181,12 +191,102 @@ row-gap: 51px;
         font-weight: 600;
          }
      }
-   width: max-content;
+  
   .cardImg {
    height: 250px;
    width: 100%;
 }
 }
+}
+
+
+@media screen and (max-width:500px) {
+ .wrapper {
+   display:grid;
+   grid-auto-columns: reapeat(1,1fr);
+ }
+ 
+
+ .pageHeader {
+   height: 290px;
+    .titleBox {
+    border-bottom: 1px solid #08f7fe;
+    width: 249px;
+    margin:0;
+    margin-top:37px;
+    margin-left: 4px;
+    h1 {
+      font-size: 30px;
+      color: #00c2ba;
+      align-self: center;
+      margin:0;
+  
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 300;
+      color: white;
+      align-self: center;
+      margin:0;
+    }
+  }
+ }
+
+
+
+.mainSection {
+  p {
+    font-size:14px;
+    font-weight: 600;
+  }
+   h2 {
+   font-size: 24px;
+  
+ }
+}
+
+.roomView {
+
+  .grid-container {
+   grid-template-rows:repeat(1,1fr);
+    .card {
+     
+      display:none;
+    }
+    .MobileCard {
+      h2 {
+        width: 100%;
+        height:  45.13px;
+        background:#F2D4AE;
+       @include center;
+      }
+      p {
+        margin-bottom:21px;
+        margin-top:7px;
+      }
+      @include center;
+      flex-direction: column;
+      width:310px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      img {
+        margin-top:39px;
+        height:  191px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      width:263px;
+      }
+      
+      .generalButton {
+        width: 100%;
+        border-radius: 0;
+      }
+    }
+  } 
+  h1 {
+    font-size:24px;
+  }
+}
+
+
 }
 
 

@@ -39,4 +39,24 @@ export default {
           margin-top:34px;
         }
     }
+
+    @media screen and (max-width:500px) { 
+
+      .foot-wrapper {
+        height: 208px;
+         .iconBox {
+        width:156px;
+        img {
+          height: 26px;
+        }
+        justify-content: space-evenly;
+      }
+      p {
+        font-size: 12px;
+        font-weight: 400;
+        margin-top:17px;
+      }
+      }
+     
+    }
 </style>
