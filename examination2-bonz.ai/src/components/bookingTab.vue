@@ -1,4 +1,5 @@
 <template>
+<div class="wrapper">
    <section class="bookingTab">
     <article class="bookingTabArticle">
       <div class="textBox">
@@ -37,7 +38,52 @@
     </article>
   </section>
 
+  
+  <section class="mobileBookingTab">
+  <article class="bookingTabArticle">
+    <div class="textBox">
+      <p class="bigP">Check in</p>
+ 
+      <p class="pTwo">Dec 22</p>
+    </div>
+    <img src="../assets/icons/calendar.svg" alt="icon" />
+  
+  </article>
+  <div class="bookingTabLine"></div>
+  <article class="bookingTabArticle">
+    <div class="textBox">
+      <p class="bigP">Check out</p>
+     
+      <p class="pTwo">Dec 26</p>
+    </div>
+    <img src="../assets/icons/calendar.svg" alt="icon" />
 
+  </article>
+</section>
+
+<section class="mobileBookingTab">
+  <article class="bookingTabArticle">
+    <div class="textBox">
+      <p class="bigP">Guests</p>
+     
+      <p class="pTwo">1 guest</p>
+    </div>
+    <img src="../assets/icons/calendar.svg" alt="icon" />
+  
+  </article>
+  <div class="bookingTabLine"></div>
+  <article class="bookingTabArticle">
+    <div class="textBoxTwo">
+      <p class="bigP">No of rooms</p>
+   
+      <p class="pTwo">1 room</p>
+    </div>
+    <img src="../assets/icons/calendar.svg" alt="icon" />
+
+  </article>
+</section>
+
+</div>
 </template>
 
 <script>

@@ -49,6 +49,7 @@ components: {
         margin-top: 47px;
         margin-bottom: 63px;
       }
+      width: 100%;
     }
   .grid-wrapper {
     display:grid;
@@ -57,6 +58,13 @@ components: {
     margin: auto;
     row-gap: 2rem;
     
+  }
+
+  @media screen and (max-width:500px) { 
+
+    .grid-wrapper {
+      width: 100%;
+    }
   }
 </style>
 
