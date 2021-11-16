@@ -5,7 +5,7 @@
     <img class="hamburgerButton" src="../assets/icons/hamburger.svg" alt="">
     <div class="navWrap">
     <h2>Stay</h2>
-    <h2>About</h2>
+    <h2 @click="toggleToPage">About</h2>
     <button class="generalButton">Book</button>
     </div>
        
@@ -15,7 +15,11 @@
 
 <script>
 export default {
-
+methods:{
+  toggleToPage(){
+    this.$router.push("/about");
+  }
+}
 }
 </script>
 
