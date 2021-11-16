@@ -12,7 +12,7 @@
     <p>Drone-delivered coffee included</p>
     </article>
     <article class="right">
-        <article class="imgReplace">Img</article>
+       <img class="imgReplace" src="../assets/photos/03-day.jpg" alt="">
         <p>Total 1100 SEK</p>
     </article>
 </article>

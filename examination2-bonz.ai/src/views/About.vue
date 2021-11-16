@@ -4,10 +4,10 @@
     <div class="grid-wrapper">
       <h1>Booking</h1>
       <bookingTab/>
-      <BookingCard/>
-      <BookingCard/>
-      <BookingCard/>
-      <BookingCard/>
+      <BookingCardOne/>
+      <BookingCardTwo/>
+      <BookingCardThree/>
+      <BookingCardFour/>
       <CompletedBookingCard/>
     </div>
 
@@ -19,14 +19,20 @@
 import Nav from "../components/Nav.vue"
 import Footer from "../components/Foot.vue";
 import bookingTab from "../components/bookingTab.vue";
-import BookingCard from "../components/BookingCard.vue";
+import BookingCardOne from "../components/BookingCardOne.vue";
+import BookingCardTwo from "../components/BookingCardTwo.vue";
+import BookingCardThree from "../components/BookingCardThree.vue";
+import BookingCardFour from "../components/BookingCardFour.vue";
 import CompletedBookingCard from "../components/CompletedBookingCard.vue";
 export default {
 components: {
   Nav,
   Footer,
   bookingTab,
-  BookingCard,
+  BookingCardOne,
+  BookingCardTwo,
+  BookingCardThree,
+  BookingCardFour,
   CompletedBookingCard
 }
 }
@@ -34,9 +40,16 @@ components: {
 
 <style lang="scss" scoped>
 
-.wrapper {
-
-}
+    .wrapper {
+      h1 {
+        text-align: center;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 30px;
+        margin-top: 47px;
+        margin-bottom: 63px;
+      }
+    }
   .grid-wrapper {
     display:grid;
     max-width: 1205px;
