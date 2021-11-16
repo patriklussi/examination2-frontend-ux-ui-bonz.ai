@@ -1,0 +1,706 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+.blackCheckBox {
+  width: 38px;
+  height: 38px;
+  margin-bottom: 2.75rem;
+  margin-left: 1.05rem; }
+
+:root {
+  font-family: 'Nunito Sans', sans-serif; }
+
+h1 {
+  font-family: 'Roboto', sans-serif; }
+
+h2 {
+  font-family: 'Roboto', sans-serif; }
+
+p {
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 0;
+  line-height: 20px; }
+
+.mobileTitleH2 {
+  width: 100%;
+  height: 45.13px;
+  background: #f2d4ae;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; }
+
+.mobilePVersionOne {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px; }
+
+.titleP {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  font-feature-settings: 'tnum' on, 'lnum' on; }
+
+.button {
+  width: 130px;
+  height: 62px;
+  background: #0c251f;
+  color: white;
+  border-radius: 9px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: none;
+  font-size: 24px;
+  font-weight: 500; }
+
+.mobileButton {
+  width: 100%;
+  height: 62px;
+  background: #0c251f;
+  color: white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: none;
+  font-size: 24px;
+  font-weight: 500; }
+
+.bookingButton {
+  width: 311px;
+  height: 62px;
+  background: #0c251f;
+  color: white;
+  border-radius: 9px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: none;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px; }
+
+:root {
+  font-family: 'Nunito Sans', sans-serif; }
+
+h1 {
+  font-family: 'Roboto', sans-serif; }
+
+h2 {
+  font-family: 'Roboto', sans-serif; }
+
+p {
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 0;
+  line-height: 20px; }
+
+.mobileTitleH2 {
+  width: 100%;
+  height: 45.13px;
+  background: #f2d4ae;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; }
+
+.mobilePVersionOne {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px; }
+
+.titleP {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  font-feature-settings: 'tnum' on, 'lnum' on; }
+
+.card {
+  display: flex; }
+  .card .left {
+    flex-basis: 50%;
+    display: flex; }
+    .card .left .cardImg {
+      height: 250px;
+      width: 100%; }
+  .card .right {
+    margin-left: 22px;
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; }
+    .card .right p {
+      font-size: 20px;
+      font-weight: 600;
+      font-size: 20px;
+      margin: 0;
+      line-height: 30px;
+      letter-spacing: 0.03em; }
+    .card .right h2 {
+      margin: 0; }
+
+.container {
+  width: 700px; }
+
+.MobileCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 310px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .MobileCard h2 {
+    width: 100%;
+    height: 45.13px;
+    background: #f2d4ae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; }
+  .MobileCard p {
+    margin-bottom: 21px;
+    margin-top: 7px; }
+  .MobileCard img {
+    margin-top: 39px;
+    height: 191px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 263px; }
+
+.navigation {
+  width: 100%;
+  height: 132px;
+  background: #00C2BA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between; }
+  .navigation h2 {
+    font-weight: 700; }
+  .navigation h2:hover {
+    cursor: pointer; }
+  .navigation .hamburgerButton {
+    display: none; }
+  .navigation .navWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 402px;
+    justify-content: space-between;
+    margin-right: 92px; }
+  .navigation h1 {
+    margin-left: 89px; }
+  .navigation .rectangle {
+    width: 100%;
+    height: 11px;
+    background: #08F7FE;
+    position: absolute;
+    top: 339px; }
+
+@media screen and (max-width: 500px) {  
+  .navigation {
+    height: 60px; }
+    .navigation .navWrap {
+      display: none; }
+    .navigation h1 {
+      margin: 0; }
+    .navigation .rectangle {
+      display: none; }
+    .navigation .hamburgerButton {
+      display: block;
+      margin-right: 18px; } }
+
+.foot-wrapper {
+  width: 100%;
+  height: 376px;
+  background: #2b2319;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .foot-wrapper .iconBox {
+    width: 255px;
+    display: flex;
+    justify-content: space-between; }
+  .foot-wrapper p {
+    font-size: 22px;
+    color: white;
+    margin-top: 34px; }
+
+@media screen and (max-width: 500px) {
+  .foot-wrapper {
+    height: 208px; }
+    .foot-wrapper .iconBox {
+      width: 156px;
+      justify-content: space-evenly; }
+      .foot-wrapper .iconBox img {
+        height: 26px; }
+    .foot-wrapper p {
+      font-size: 12px;
+      font-weight: 400;
+      margin-top: 17px; } }
+
+.bookingTab {
+  height: 104px;
+  width: 1205px;
+  background: #f3f2ee;
+  border-radius: 9px;
+  display: flex;
+  justify-content: space-evenly; }
+
+.mobileBookingTab {
+  display: none; }
+
+.bookingTabArticle {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .bookingTabArticle img {
+    height: 58.43px;
+    width: 58.43px;
+    margin-right: 35px;
+    margin-bottom: 41px;
+    margin-top: 10px; }
+
+.bookingTabArticle:hover {
+  cursor: pointer; }
+
+.textBox {
+  margin-right: 72px;
+  margin-left: 35px; }
+  .textBox p {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700; }
+  .textBox .pTwo {
+    font-weight: 600; }
+
+.bookingTabLine {
+  height: 100%;
+  width: 1px;
+  background: black; }
+
+@media screen and (max-width: 500px) {
+  .bookingTab {
+    display: none; }
+  .mobileBookingTab {
+    display: block;
+    height: 94px;
+    background: #F3F2EE;
+    width: 100%;
+    border-radius: 9px;
+    display: flex;
+    justify-content: space-evenly; }
+    .mobileBookingTab .bigP {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 30px;
+      margin: 0; }
+    .mobileBookingTab .pTwo {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 30px;
+      margin: 0; }
+    .mobileBookingTab .textBox {
+      margin: 0;
+      margin-right: 28px;
+      margin-left: 3px; }
+    .mobileBookingTab img {
+      margin: 0;
+      margin-right: 30px;
+      margin-bottom: 50px;
+      height: 30px;
+      width: 24px; }
+  .wrapper {
+    width: 372px; } }
+
+:root {
+  font-family: 'Nunito Sans', sans-serif; }
+
+h1 {
+  font-family: 'Roboto', sans-serif; }
+
+h2 {
+  font-family: 'Roboto', sans-serif; }
+
+p {
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 0;
+  line-height: 20px; }
+
+.mobileTitleH2 {
+  width: 100%;
+  height: 45.13px;
+  background: #f2d4ae;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; }
+
+.mobilePVersionOne {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px; }
+
+.titleP {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  font-feature-settings: 'tnum' on, 'lnum' on; }
+
+.bookingCardWrap {
+  border-top: 1px solid rgba(163, 163, 163, 0.6);
+  
+  transform: rotate(-0.23deg);
+  height: 390px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.mobileBookingCard {
+  display: none; }
+
+.bookingCard {
+  height: 310.18px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between; }
+  .bookingCard .contentBox {
+    display: flex; }
+    .bookingCard .contentBox .left {
+      flex-basis: 50%;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content; }
+      .bookingCard .contentBox .left img {
+        height: 246.70358276367188px;
+        width: 345px; }
+    .bookingCard .contentBox .right {
+      flex-basis: 50%; }
+      .bookingCard .contentBox .right p {
+        font-weight: 600;
+        font-size: 20px;
+        margin: 0;
+        margin-left: 22px;
+        line-height: 30px;
+        letter-spacing: 0.03em; }
+      .bookingCard .contentBox .right h2 {
+        margin: 0;
+        margin-left: 22px;
+        margin-bottom: 20px; }
+  .bookingCard .addOnBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 21px; }
+    .bookingCard .addOnBox .AddOnWrap {
+      display: flex;
+      justify-content: flex-end; }
+      .bookingCard .addOnBox .AddOnWrap p {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        margin: 0;
+        text-align: right; }
+    .bookingCard .addOnBox .button {
+      margin-right: 4.813rem;
+      margin-top: 2.1rem; }
+    .bookingCard .addOnBox .total {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 28px;
+      margin: 0;
+      margin-right: 8rem; }
+
+@media screen and (max-width: 500px) {
+  .mobileBookingCard {
+    display: block;
+    height: 665.2px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column; }
+    .mobileBookingCard img {
+      height: 191px;
+      width: 284.2096862792969px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
+    .mobileBookingCard .checkBoxWrap {
+      display: flex;
+      justify-content: space-between;
+      width: 80%; }
+      .mobileBookingCard .checkBoxWrap .blackCheckBox {
+        flex-grow: grow;
+        height: 28.1540470123291px;
+        width: 28.1540470123291px;
+        margin: 0; }
+  .bookingCardWrap {
+    display: none; } }
+
+.completedBookingWrap {
+  height: 769px;
+  background: #F3F2EE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around; }
+  .completedBookingWrap h1 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 30px; }
+  .completedBookingWrap .middle {
+    height: 270px;
+    display: flex;
+    width: 90%;
+    justify-content: space-between; }
+    .completedBookingWrap .middle .left {
+      flex-basis: 50%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column; }
+      .completedBookingWrap .middle .left p {
+        margin: 0;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px; }
+    .completedBookingWrap .middle .right {
+      flex-basis: 50%;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column; }
+      .completedBookingWrap .middle .right p {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        margin: 0;
+        margin-right: 13px; }
+      .completedBookingWrap .middle .right .imgReplace {
+        height: 183.21px;
+        width: 280.9px;
+        background: red;
+        margin-bottom: 62px; }
+
+.mobileCard {
+  display: none; }
+
+@media screen and (max-width: 500px) {
+  .mobileCard {
+    display: block;
+    height: 692.04px;
+    background: #F3F2EE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+    .mobileCard .mobileButton {
+      width: 100%;
+      margin-bottom: 0; }
+    .mobileCard .imgReplace {
+      height: 183.21px;
+      width: 280.9px;
+      background: red;
+      margin-bottom: 62px; }
+    .mobileCard .textWrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .mobileCard .textWrap p {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 30px; }
+  .completedBookingWrap {
+    display: none; } }
+
+.box {
+  height: 342.64825439453125px;
+  width: 295px;
+  border-radius: 9px;
+  background: #f3f2ee;
+  display: flex;
+  flex-direction: column; }
+  .box p {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0;
+    margin-left: 6px; }
+  .box .calendarWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 84px; }
+    .box .calendarWrap .doH {
+      margin-right: 7px; }
+  .box .mainCalendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+
+.mobileCalendar {
+  display: none; }
+
+@media screen and (max-width: 500px) {
+  .box {
+    display: none; }
+  .mobileCalendar {
+    display: block;
+    height: 550px;
+    width: 95%;
+    background: #F3F2EE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column; }
+    .mobileCalendar .Xbutton {
+      align-self: flex-start;
+      margin: 10px; } }
+
+:root {
+  font-family: 'Nunito Sans', sans-serif; }
+
+h1 {
+  font-family: 'Roboto', sans-serif; }
+
+h2 {
+  font-family: 'Roboto', sans-serif; }
+
+p {
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 0;
+  line-height: 20px; }
+
+.mobileTitleH2 {
+  width: 100%;
+  height: 45.13px;
+  background: #f2d4ae;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; }
+
+.mobilePVersionOne {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px; }
+
+.titleP {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  font-feature-settings: 'tnum' on, 'lnum' on; }
+
+.blackCheckBox {
+  width: 38px;
+  height: 38px;
+  margin-bottom: 2.75rem;
+  margin-left: 1.05rem; }
+
+.bTabBox {
+  display: inline-block;
+  height: 173px;
+  width: 295px;
+  background: #f3f2ee;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .bTabBox .titleP {
+    align-self: flex-start;
+    margin-left: 24px; }
+  .bTabBox .mobileButton {
+    display: none; }
+  .bTabBox .Xbutton {
+    display: none; }
+  .bTabBox .bTabWrapWrap {
+    height: 68px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px; }
+  .bTabBox .bTabWrap {
+    display: flex;
+    justify-content: space-between;
+    width: 228px;
+    margin-right: 43px;
+    margin-left: 24px; }
+    .bTabBox .bTabWrap p {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px; }
+
+@media screen and (max-width: 500px) {
+  .bTabBox {
+    height: 550px;
+    display: flex;
+    width: 90%;
+    justify-content: space-between; }
+    .bTabBox .bTabWrap {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px; }
+    .bTabBox .bTabWrapWrap {
+      width: 80%;
+      margin-bottom: 7rem; }
+    .bTabBox .Xbutton {
+      align-self: flex-start;
+      margin-left: 11px;
+      margin-top: 8px;
+      display: block; }
+    .bTabBox .titleP {
+      display: none; }
+    .bTabBox .mobileButton {
+      display: block;
+      width: 90%;
+      margin-bottom: 20px; } }
+
+.bTabBoxBox {
+  display: inline-block;
+  height: 173px;
+  width: 295px;
+  background: #f3f2ee;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .bTabBoxBox .mobileButton {
+    display: none; }
+  .bTabBoxBox .Xbutton {
+    display: none; }
+
+.btabRoomContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 24px; }
+  .btabRoomContainer .titleP {
+    margin: 0; }
+
+@media screen and (max-width: 500px) {
+  .bTabBoxBox {
+    height: 550px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .bTabBoxBox .mobileButton {
+      display: block;
+      width: 90%;
+      margin-bottom: 20px; }
+    .bTabBoxBox .btabRoomContainer {
+      width: 80%;
+      margin-bottom: 5rem;
+      margin-right: 61px;
+      margin-left: 61px; }
+    .bTabBoxBox .Xbutton {
+      display: block;
+      align-self: flex-start;
+      margin-left: 11px;
+      margin-top: 8px; } }

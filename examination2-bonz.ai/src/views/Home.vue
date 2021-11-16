@@ -12,72 +12,96 @@
       <p>
         Hello from Bonz.AI 👋 we are thrilled to welcome you to our AI-powered
         eco-stay at Bohuslän to the north of Gothenburg, Sweden.
-        <br>
-        <br>
-         We believe in
-        offering a personalized stay like none other, by bringing the ultimate
-        contact-less experience to you at your finger tips - on your mobile
-        device. Sit back, relax and let Bonz.AI take care of you.
+        <br />
+        <br />
+        We believe in offering a personalized stay like none other, by bringing
+        the ultimate contact-less experience to you at your finger tips - on
+        your mobile device. Sit back, relax and let Bonz.AI take care of you.
       </p>
       <button class="generalButton">Book now</button>
     </main>
     <section class="roomView">
       <h1>Select your stay</h1>
       <section class="grid-container">
-      <article class="card">
-        <article class="left"> <img class="cardImg" src="../assets/photos/01-night.jpg" alt=""></article>
-        <article class="right">
-         
-        <h2>Type 1</h2>
-        <p>Lorem Ipsum is simply <br> dummy text of the <br> printing and typesetting <br> industry.</p>
-      
-      
-        <button class="generalButton">Book</button>
+        <article class="card">
+          <article class="left">
+            <img class="cardImg" src="../assets/photos/01-night.jpg" alt="" />
           </article>
-      </article>
+          <article class="right">
+            <h2>Type 1</h2>
+            <p>
+              Lorem Ipsum is simply <br />
+              dummy text of the <br />
+              printing and typesetting <br />
+              industry.
+            </p>
 
-      <article class="MobileCard">
+            <button class="generalButton">Book</button>
+          </article>
+        </article>
+
+        <article class="MobileCard">
           <h2>Type 1</h2>
-          <img class="cardImg" src="../assets/photos/01-night.jpg" alt="">
-             <p>Lorem Ipsum is simply <br> dummy text of the <br> printing and typesetting <br> industry.</p>
-               <button class="generalButton">Book</button>
-      </article>
+          <img class="cardImg" src="../assets/photos/01-night.jpg" alt="" />
+          <p>
+            Lorem Ipsum is simply <br />
+            dummy text of the <br />
+            printing and typesetting <br />
+            industry.
+          </p>
+          <button class="generalButton">Book</button>
+        </article>
 
-       <article class="card">
-        <article class="left"> <img class="cardImg" src="../assets/photos/01-night.jpg" alt=""></article>
-        <article class="right">
-         
-        <h2>Type 1</h2>
-        <p>Lorem Ipsum is simply <br> dummy text of the <br> printing and typesetting <br> industry.</p>
-      
-      
-        <button class="generalButton">Book</button>
+        <article class="card">
+          <article class="left">
+            <img class="cardImg" src="../assets/photos/01-night.jpg" alt="" />
           </article>
-      </article>
+          <article class="right">
+            <h2>Type 1</h2>
+            <p>
+              Lorem Ipsum is simply <br />
+              dummy text of the <br />
+              printing and typesetting <br />
+              industry.
+            </p>
 
-       <article class="card">
-        <article class="left"> <img class="cardImg" src="../assets/photos/01-night.jpg" alt=""></article>
-        <article class="right">
-         
-        <h2>Type 1</h2>
-        <p>Lorem Ipsum is simply <br> dummy text of the <br> printing and typesetting <br> industry.</p>
-      
-      
-        <button class="generalButton">Book</button>
+            <button class="generalButton">Book</button>
           </article>
-      </article>
-       <article class="card">
-        <article class="left"> <img class="cardImg" src="../assets/photos/01-night.jpg" alt=""></article>
-        <article class="right">
-         
-        <h2>Type 1</h2>
-        <p>Lorem Ipsum is simply <br> dummy text of the <br> printing and typesetting <br> industry.</p>
-      
-      
-        <button class="generalButton">Book</button>
+        </article>
+
+        <article class="card">
+          <article class="left">
+            <img class="cardImg" src="../assets/photos/01-night.jpg" alt="" />
           </article>
-      </article>
-    </section>
+          <article class="right">
+            <h2>Type 1</h2>
+            <p>
+              Lorem Ipsum is simply <br />
+              dummy text of the <br />
+              printing and typesetting <br />
+              industry.
+            </p>
+
+            <button class="generalButton">Book</button>
+          </article>
+        </article>
+        <article class="card">
+          <article class="left">
+            <img class="cardImg" src="../assets/photos/01-night.jpg" alt="" />
+          </article>
+          <article class="right">
+            <h2>Type 1</h2>
+            <p>
+              Lorem Ipsum is simply <br />
+              dummy text of the <br />
+              printing and typesetting <br />
+              industry.
+            </p>
+
+            <button class="generalButton">Book</button>
+          </article>
+        </article>
+      </section>
     </section>
     <Foot />
   </div>
@@ -92,9 +116,9 @@ export default {
   name: "Home",
   components: {
     Nav,
-    Foot
+    Foot,
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -107,7 +131,7 @@ export default {
   height: 810px;
   //  @include center;
   // flex-direction: column;
-
+ 
   .titleBox {
     border-bottom: 6px solid #08f7fe;
     width: 642px;
@@ -137,51 +161,40 @@ export default {
 .mainSection {
   height: 646px;
   background: #d3cfc347;
- @include center;
- flex-direction: column;
- p {
-   width:60%;
-   font-size: 2rem;
-   margin:0;
- }
- h2 {
-   font-size: 2.25rem;
+  @include center;
+  flex-direction: column;
   
- }
- 
+  h2 {
+    font-size: 2.25rem;
+  }
 }
 .roomView {
   h1 {
     margin-bottom: 51px;
-    font-size:2.25rem;
+    font-size: 2.25rem;
     font-weight: 500;
   }
   height: 859px;
- display: flex;
- justify-content: center;
-align-items: center;
-flex-direction: column;
+  @include center;
+  flex-direction: column;
 
- .grid-container {
-  display:grid;
-  grid-template-columns: repeat(2,1fr);
-  max-width: 1500px;
-row-gap: 51px;
-
- 
- }
-        .MobileCard {
-   display:None;
- }
-      .card {
-    
-      display: flex;
-      .left {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   max-width: 1500px;
+    row-gap: 51px;
+  }
+  .MobileCard {
+    display: None;
+  }
+  .card {
+    display: flex;
+    .left {
       flex-basis: 50%;
       display: flex;
-      }
-      .right {
-        margin-left:22px;
+    }
+    .right {
+      margin-left: 22px;
       flex-basis: 50%;
       @include space-between;
 
@@ -189,106 +202,93 @@ row-gap: 51px;
       p {
         font-size: 20px;
         font-weight: 600;
-         }
-     }
-  
-  .cardImg {
-   height: 250px;
-   width: 100%;
-}
-}
+      }
+    }
+
+    .cardImg {
+      height: 250px;
+      width: 100%;
+    }
+  }
 }
 
+@media screen and (max-width: 500px) {
+  .wrapper {
+    display: grid;
+    grid-auto-columns: reapeat(1, 1fr);
+  }
 
-@media screen and (max-width:500px) {
- .wrapper {
-   display:grid;
-   grid-auto-columns: reapeat(1,1fr);
- }
- 
-
- .pageHeader {
-   height: 290px;
+  .pageHeader {
+    height: 290px;
     .titleBox {
-    border-bottom: 1px solid #08f7fe;
-    width: 249px;
-    margin:0;
-    margin-top:37px;
-    margin-left: 4px;
-    h1 {
-      font-size: 30px;
-      color: #00c2ba;
-      align-self: center;
-      margin:0;
-  
+      border-bottom: 1px solid #08f7fe;
+      width: 249px;
+      margin: 0;
+      margin-top: 37px;
+      margin-left: 4px;
+      h1 {
+        font-size: 30px;
+        color: #00c2ba;
+        align-self: center;
+        margin: 0;
+      }
+      h2 {
+        font-size: 20px;
+        font-weight: 300;
+        color: white;
+        align-self: center;
+        margin: 0;
+      }
+    }
+  }
+
+  .mainSection {
+    p {
+      font-size: 14px;
+      font-weight: 600;
     }
     h2 {
-      font-size: 20px;
-      font-weight: 300;
-      color: white;
-      align-self: center;
-      margin:0;
+      font-size: 24px;
     }
   }
- }
 
-
-
-.mainSection {
-  p {
-    font-size:14px;
-    font-weight: 600;
-  }
-   h2 {
-   font-size: 24px;
-  
- }
-}
-
-.roomView {
-
-  .grid-container {
-   grid-template-rows:repeat(1,1fr);
-    .card {
-     
-      display:none;
-    }
-    .MobileCard {
-      h2 {
-        width: 100%;
-        height:  45.13px;
-        background:#F2D4AE;
-       @include center;
+  .roomView {
+    .grid-container {
+      grid-template-rows: repeat(1, 1fr);
+      .card {
+        display: none;
       }
-      p {
-        margin-bottom:21px;
-        margin-top:7px;
-      }
-      @include center;
-      flex-direction: column;
-      width:310px;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      img {
-        margin-top:39px;
-        height:  191px;
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-      width:263px;
-      }
-      
-      .generalButton {
-        width: 100%;
-        border-radius: 0;
+      .MobileCard {
+        h2 {
+          width: 100%;
+          height: 45.13px;
+          background: #f2d4ae;
+          @include center;
+        }
+        p {
+          margin-bottom: 21px;
+          margin-top: 7px;
+        }
+        @include center;
+        flex-direction: column;
+        width: 310px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        img {
+          margin-top: 39px;
+          height: 191px;
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          width: 263px;
+        }
+
+        .generalButton {
+          width: 100%;
+          border-radius: 0;
+        }
       }
     }
-  } 
-  h1 {
-    font-size:24px;
+    h1 {
+      font-size: 24px;
+    }
   }
 }
-
-
-}
-
-
-
 </style>
