@@ -38,8 +38,7 @@
     </article>
   </section>
 
-  
-  <section class="mobileBookingTab">
+    <section class="mobileBookingTab">
   <article class="bookingTabArticle">
     <div class="textBox">
       <p class="bigP">Check in</p>
@@ -82,6 +81,7 @@
 
   </article>
 </section>
+  
 
 </div>
 </template>
