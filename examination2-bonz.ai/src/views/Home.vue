@@ -214,8 +214,7 @@ export default {
 
 @media screen and (max-width: 500px) {
   .wrapper {
-    display: grid;
-    grid-auto-columns: reapeat(1, 1fr);
+ 
   }
 
   .pageHeader {

@@ -1,5 +1,5 @@
 <template>
-<div class="wrapper">
+<div class="wrapperBookingTab">
    <section class="bookingTab">
     <article class="bookingTabArticle">
       <div class="textBox">
@@ -109,5 +109,10 @@ data:function(){
 </script>
 
 <style lang="scss" scoped>
-
+ @media screen and (max-width:500px) { 
+    .mobileBookingTab {
+      margin-bottom: 18px;
+    }
+    
+  }
 </style>

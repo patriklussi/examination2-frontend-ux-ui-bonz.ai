@@ -1,18 +1,22 @@
 <template>
   <div class="wrapper">
    <Nav/>
-    <div v-if="toggle" class="grid-wrapper">
+  <div class="Stormcloak">
+    <div class="item-wrapper">
       <h1>Booking</h1>
-      <bookingTab/>
-      <BookingCardOne/>
-      <BookingCardTwo/>
-      <BookingCardThree/>
-      <BookingCardFour/>
-      <CompletedBookingCard v-on:paymentDetails="toggleFunc" />
+      <bookingTab class="test"/>
+      <BookingCardOne class="testTwo"/>
+      <BookingCardTwo class="testTwo"/>
+      <BookingCardThree class="testTwo"/>
+      <BookingCardFour class="testTwo"/>
+      <CompletedBookingCard class="testThree"  v-on:paymentDetails="toggleFunc" />
     </div>
+  </div>
     <PaymentDetails v-if="!toggle"/>
     <CreditCardDetails v-if="toggleTwo"/>
-   <Footer/>
+      <Footer/>
+   
+ 
   </div>
 </template>
 
@@ -55,8 +59,9 @@ methods:{
 </script>
 
 <style lang="scss" scoped>
-
-    .wrapper {
+@import '../scss/_mixins.scss';
+.wrapper {
+  
       h1 {
         text-align: center;
         font-weight: 500;
@@ -66,21 +71,37 @@ methods:{
         margin-bottom: 63px;
       }
       width: 100%;
+      .Stormcloak  {
+    width:100%;
+    @include center;
+    flex-direction: column;
+    .item-wrapper {
+      width: 75%;
+      @include center;
+      flex-direction: column;
+      .test {
+        margin-bottom: 3.5rem;
+      }
+      .testTwo {
+        margin-bottom: 3.5rem;
+      }
+      .testThree {
+        margin-bottom: 80px;
+      }
+     
     }
-  .grid-wrapper {
-    display:grid;
-    max-width: 1205px;
-    grid-template-columns: auto;
-    margin: auto;
-    row-gap: 2rem;
-    margin-bottom: 80px;
+    }
   }
+  
 
   @media screen and (max-width:500px) { 
-
-    .grid-wrapper {
-      width: 100%;
+    .Stormcloak {
+      .item-wrapper {
+      width: 90%;
     }
+
+    }
+    
   }
 </style>
 
