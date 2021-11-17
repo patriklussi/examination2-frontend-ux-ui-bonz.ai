@@ -20,6 +20,7 @@
       <div class="bookingTabLine"></div>
     </article>
     <article class="bookingTabArticle">
+    
       <div class="textBox">
         <p>Guests</p>
         <br />
@@ -87,8 +88,23 @@
 </template>
 
 <script>
-export default {
 
+export default {
+components: {
+
+  
+},
+data:function(){
+    return {
+      toggle:true,
+    }
+  },
+  methods: {
+    test(){
+      this.toggle = false;
+      console.log("hello");
+    }
+  }
 }
 </script>
 

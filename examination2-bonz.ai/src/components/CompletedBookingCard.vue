@@ -23,7 +23,7 @@
 <section class="mobileCard">
 
     <h1>Your booking</h1>
-    <article class="imgReplace">Img</article>
+      <img class="imgReplace" src="../assets/photos/03-day.jpg" alt="">
     <div class="textWrap">
     <p>Wed, Dec 22, 2021 - Sun, Dec 26, 2019 </p>
     <p>1 Adult</p>

@@ -12,6 +12,21 @@
   margin-bottom: 2.75rem;
   margin-left: 1.05rem; }
 
+.inputCardNumber {
+  width: 55%;
+  height: 76px;
+  background: rgba(243, 242, 238, 0.8);
+  border: 1px solid #A3A3A3;
+  box-sizing: border-box;
+  border-radius: 5px; }
+
+.inputText {
+  height: 65px;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid rgba(163, 163, 163, 0.6);
+  background: #f3f2ee; }
+
 :root {
   font-family: 'Nunito Sans', sans-serif; }
 
@@ -40,11 +55,38 @@ p {
   font-size: 14px;
   line-height: 20px; }
 
+.mobilePVersionTwo {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px; }
+
 .titleP {
   font-weight: bold;
   font-size: 20px;
   line-height: 27px;
   font-feature-settings: 'tnum' on, 'lnum' on; }
+
+.pDetailsp {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px; }
+
+.h1Title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 30px; }
+
+.labelText {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px; }
+
+.smallLabel {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px; }
 
 .button {
   width: 130px;
@@ -107,11 +149,38 @@ p {
   font-size: 14px;
   line-height: 20px; }
 
+.mobilePVersionTwo {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px; }
+
 .titleP {
   font-weight: bold;
   font-size: 20px;
   line-height: 27px;
   font-feature-settings: 'tnum' on, 'lnum' on; }
+
+.pDetailsp {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px; }
+
+.h1Title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 30px; }
+
+.labelText {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px; }
+
+.smallLabel {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px; }
 
 .card {
   display: flex; }
@@ -194,7 +263,7 @@ p {
     position: absolute;
     top: 339px; }
 
-@media screen and (max-width: 500px) {  
+@media screen and (max-width: 500px) {
   .navigation {
     height: 60px; }
     .navigation .navWrap {
@@ -339,15 +408,42 @@ p {
   font-size: 14px;
   line-height: 20px; }
 
+.mobilePVersionTwo {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px; }
+
 .titleP {
   font-weight: bold;
   font-size: 20px;
   line-height: 27px;
   font-feature-settings: 'tnum' on, 'lnum' on; }
 
+.pDetailsp {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px; }
+
+.h1Title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 30px; }
+
+.labelText {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px; }
+
+.smallLabel {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px; }
+
 .bookingCardWrap {
   border-top: 1px solid rgba(163, 163, 163, 0.6);
-  
+  border-bottom: 1px solid rgba(163, 163, 163, 0.6);
   transform: rotate(-0.23deg);
   height: 390px;
   display: flex;
@@ -409,7 +505,7 @@ p {
       margin: 0;
       margin-right: 8rem; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
   .mobileBookingCard {
     display: block;
     height: 665.2px;
@@ -475,7 +571,7 @@ p {
         margin-right: 13px; }
       .completedBookingWrap .middle .right .imgReplace {
         height: 183.21px;
-       
+        width: 280.9px;
         background: red;
         margin-bottom: 62px; }
 
@@ -584,17 +680,59 @@ p {
   font-size: 14px;
   line-height: 20px; }
 
+.mobilePVersionTwo {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px; }
+
 .titleP {
   font-weight: bold;
   font-size: 20px;
   line-height: 27px;
   font-feature-settings: 'tnum' on, 'lnum' on; }
 
+.pDetailsp {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px; }
+
+.h1Title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 30px; }
+
+.labelText {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px; }
+
+.smallLabel {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px; }
+
 .blackCheckBox {
   width: 38px;
   height: 38px;
   margin-bottom: 2.75rem;
   margin-left: 1.05rem; }
+
+.inputCardNumber {
+  width: 55%;
+  height: 76px;
+  background: rgba(243, 242, 238, 0.8);
+  border: 1px solid #A3A3A3;
+  box-sizing: border-box;
+  border-radius: 5px; }
+
+.inputText {
+  height: 65px;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid rgba(163, 163, 163, 0.6);
+  background: #f3f2ee; }
 
 .bTabBox {
   display: inline-block;
@@ -704,3 +842,161 @@ p {
       align-self: flex-start;
       margin-left: 11px;
       margin-top: 8px; } }
+
+.hamburgerOverlay {
+  display: none; }
+
+@media screen and (max-width: 500px) {
+  .hamburgerOverlay {
+    display: block;
+    height: 736px;
+    background: #0C251F;
+    width: 84%;
+    display: flex;
+    flex-direction: column; }
+    .hamburgerOverlay p {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 56px;
+      color: #E6E6E5;
+      margin: 0; }
+    .hamburgerOverlay .oContainer {
+      display: flex;
+      flex-direction: column;
+      margin-left: 31px;
+      margin-top: 88px; }
+    .hamburgerOverlay svg {
+      align-self: flex-end;
+      margin-right: 25px;
+      margin-top: 21px; } }
+
+.paymentDetailsWrap {
+  height: 982px;
+  width: 65%;
+  background: #f3f2ee;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+  .paymentDetailsWrap .mobileButton {
+    display: none; }
+  .paymentDetailsWrap .pdBox {
+    width: 90%;
+    height: 503px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .paymentDetailsWrap .pdBox input {
+      height: 73px;
+      border-radius: 0;
+      border: none;
+      border-bottom: 1px solid rgba(163, 163, 163, 0.6);
+      background: #f3f2ee; }
+    .paymentDetailsWrap .pdBox label {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 30px; }
+  .paymentDetailsWrap .rButtonBox {
+    width: 90%;
+    border-bottom: 1px solid rgba(163, 163, 163, 0.6);
+    display: flex;
+    justify-content: space-between; }
+    .paymentDetailsWrap .rButtonBox .blackCheckBox {
+      margin: 0;
+      margin-right: 135px;
+      margin-bottom: 13px; }
+
+@media screen and (max-width: 500px) {
+  .paymentDetailsWrap {
+    justify-content: space-between;
+    height: 530.5px;
+    width: 90%; }
+    .paymentDetailsWrap h1 {
+      margin: 0;
+      margin-top: 35px; }
+    .paymentDetailsWrap .pdBox {
+      height: 245px; }
+      .paymentDetailsWrap .pdBox input {
+        height: 52px;
+        margin-bottom: 10px; }
+    .paymentDetailsWrap .mobileButton {
+      display: block; }
+    .paymentDetailsWrap .bookingButton {
+      display: none; }
+    .paymentDetailsWrap .rButtonBox {
+      border: none; }
+      .paymentDetailsWrap .rButtonBox .blackCheckBox {
+        margin: 0; }
+      .paymentDetailsWrap .rButtonBox p {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 30px; } }
+
+.creditCardDetailsWrap {
+  height: 873px;
+  width: 65%;
+  background: #f3f2ee;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+  .creditCardDetailsWrap .cdBox {
+    height: 271px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+  .creditCardDetailsWrap .mobileButton {
+    display: none; }
+  .creditCardDetailsWrap .inputBox {
+    display: flex;
+    height: 126px;
+    width: 90%;
+    justify-content: space-between; }
+    .creditCardDetailsWrap .inputBox div {
+      height: 100%;
+      display: flex;
+      flex-direction: column; }
+      .creditCardDetailsWrap .inputBox div .labelText {
+        margin-bottom: 19px; }
+      .creditCardDetailsWrap .inputBox div .dateInput {
+        width: 218px;
+        height: 76px;
+        background: rgba(243, 242, 238, 0.8);
+        border: 1px solid #A3A3A3;
+        box-sizing: border-box;
+        border-radius: 5px; }
+      .creditCardDetailsWrap .inputBox div .ccvInput {
+        width: 143px;
+        height: 76px;
+        background: rgba(243, 242, 238, 0.8);
+        border: 1px solid #A3A3A3;
+        box-sizing: border-box;
+        border-radius: 5px;
+        margin-right: 266px; }
+
+@media screen and (max-width: 500px) {
+  .creditCardDetailsWrap {
+    justify-content: space-between;
+    height: 530.5px;
+    width: 90%; }
+    .creditCardDetailsWrap .mobileButton {
+      display: block; }
+    .creditCardDetailsWrap .bookingButton {
+      display: none; }
+    .creditCardDetailsWrap .cdBox .inputCardNumber {
+      border: none; }
+    .creditCardDetailsWrap .inputBox div .dateInput {
+      border: none;
+      background: none;
+      width: 100px; }
+    .creditCardDetailsWrap .inputBox div .ccvInput {
+      border: none;
+      background: none;
+      width: 100px;
+      margin-right: 20px; } }

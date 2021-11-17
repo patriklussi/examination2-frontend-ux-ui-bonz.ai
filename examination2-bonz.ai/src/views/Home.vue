@@ -41,8 +41,8 @@
         </article>
 
         <article class="MobileCard">
-          <h2>Type 1</h2>
-          <img class="cardImg" src="../assets/photos/01-night.jpg" alt="" />
+          <h2>Type 2</h2>
+          <img class="cardImg" src="../assets/photos/02-night.jpg" alt="" />
           <p>
             Lorem Ipsum is simply <br />
             dummy text of the <br />
@@ -71,10 +71,10 @@
 
         <article class="card">
           <article class="left">
-            <img class="cardImg" src="../assets/photos/01-night.jpg" alt="" />
+            <img class="cardImg" src="../assets/photos/03-night.jpg" alt="" />
           </article>
           <article class="right">
-            <h2>Type 1</h2>
+            <h2>Type 3</h2>
             <p>
               Lorem Ipsum is simply <br />
               dummy text of the <br />
@@ -87,10 +87,10 @@
         </article>
         <article class="card">
           <article class="left">
-            <img class="cardImg" src="../assets/photos/01-night.jpg" alt="" />
+            <img class="cardImg" src="../assets/photos/04-night.jpg" alt="" />
           </article>
           <article class="right">
-            <h2>Type 1</h2>
+            <h2>Type 4</h2>
             <p>
               Lorem Ipsum is simply <br />
               dummy text of the <br />

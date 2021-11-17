@@ -57,7 +57,7 @@ components: {
     grid-template-columns: auto;
     margin: auto;
     row-gap: 2rem;
-    
+    margin-bottom: 80px;
   }
 
   @media screen and (max-width:500px) { 
