@@ -1,16 +1,17 @@
 <template>
   <div class="wrapper">
    <Nav/>
-    <div class="grid-wrapper">
+    <div v-if="toggle" class="grid-wrapper">
       <h1>Booking</h1>
       <bookingTab/>
       <BookingCardOne/>
       <BookingCardTwo/>
       <BookingCardThree/>
       <BookingCardFour/>
-      <CompletedBookingCard/>
+      <CompletedBookingCard v-on:paymentDetails="toggleFunc" />
     </div>
-
+    <PaymentDetails v-if="!toggle"/>
+    <CreditCardDetails v-if="toggleTwo"/>
    <Footer/>
   </div>
 </template>
@@ -24,6 +25,8 @@ import BookingCardTwo from "../components/BookingCardTwo.vue";
 import BookingCardThree from "../components/BookingCardThree.vue";
 import BookingCardFour from "../components/BookingCardFour.vue";
 import CompletedBookingCard from "../components/CompletedBookingCard.vue";
+import CreditCardDetails from "../components/creditCardDetails.vue";
+import PaymentDetails from "../components/paymentDetails.vue";
 export default {
 components: {
   Nav,
@@ -33,7 +36,20 @@ components: {
   BookingCardTwo,
   BookingCardThree,
   BookingCardFour,
-  CompletedBookingCard
+  CompletedBookingCard,
+  CreditCardDetails,
+  PaymentDetails,
+},
+data:function(){
+return {
+  toggle:true,
+  toggleTwo:false,
+}
+},
+methods:{
+  toggleFunc(){
+    console.log("Hello there");
+  }
 }
 }
 </script>

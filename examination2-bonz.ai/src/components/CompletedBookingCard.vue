@@ -33,14 +33,19 @@
 
     <p >Total 1100 SEK</p>
     </div>
-    <button class="mobileButton">Complete your booking</button>
+    <button  class="mobileButton">Complete your booking</button>
 </section>
   </div>
 </template>
 
 <script>
 export default {
-
+methods:{
+  emitFunc(){
+    this.$emit("paymentDetails")
+    console.log("hello");
+  }
+}
 }
 </script>
 
