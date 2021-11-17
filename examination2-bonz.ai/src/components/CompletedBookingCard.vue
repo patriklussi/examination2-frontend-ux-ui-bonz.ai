@@ -33,7 +33,7 @@
 
     <p >Total 1100 SEK</p>
     </div>
-    <button  class="mobileButton">Complete your booking</button>
+    <button @click="emitFunc"  class="mobileButton">Complete your booking</button>
 </section>
   </div>
 </template>
