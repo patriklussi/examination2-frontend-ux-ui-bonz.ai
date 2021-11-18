@@ -18,7 +18,7 @@
         the ultimate contact-less experience to you at your finger tips - on
         your mobile device. Sit back, relax and let Bonz.AI take care of you.
       </p>
-      <button class="generalButton">Book now</button>
+      <button class="button">Book now</button>
     </main>
     <section class="roomView">
       <h1>Select your stay</h1>
@@ -36,11 +36,26 @@
               industry.
             </p>
 
-            <button class="generalButton">Book</button>
+            <button class="button">Book</button>
           </article>
         </article>
+        <div class="wrapperMobile">
 
-        <article class="MobileCard">
+          <img class="chevronBoyOne"   @click="chevronRight" src="../assets/icons/chevronLeft.svg" alt="">
+
+
+           <article v-if="!toggle" class="MobileCard">
+          <h2>Type 1</h2>
+          <img class="cardImg" src="../assets/photos/06-night.jpg" alt="" />
+          <p>
+            Lorem Ipsum is simply <br />
+            dummy text of the <br />
+            printing and typesetting <br />
+            industry.
+          </p>
+          <button class="mobileButton">Book</button>
+        </article>
+           <article  v-if="toggle" class="MobileCard">
           <h2>Type 2</h2>
           <img class="cardImg" src="../assets/photos/02-night.jpg" alt="" />
           <p>
@@ -49,9 +64,14 @@
             printing and typesetting <br />
             industry.
           </p>
-          <button class="generalButton">Book</button>
+          <button class="mobileButton">Book</button>
         </article>
 
+
+          <img @click="chevronToggle"  class="chevronBoyTwo"  src="../assets/icons/chevronRight.svg" alt="">
+
+        </div>
+       
         <article class="card">
           <article class="left">
             <img class="cardImg" src="../assets/photos/01-night.jpg" alt="" />
@@ -65,7 +85,7 @@
               industry.
             </p>
 
-            <button class="generalButton">Book</button>
+            <button class="button">Book</button>
           </article>
         </article>
 
@@ -82,7 +102,7 @@
               industry.
             </p>
 
-            <button class="generalButton">Book</button>
+            <button class="button">Book</button>
           </article>
         </article>
         <article class="card">
@@ -98,7 +118,7 @@
               industry.
             </p>
 
-            <button class="generalButton">Book</button>
+            <button class="button">Book</button>
           </article>
         </article>
       </section>
@@ -118,6 +138,25 @@ export default {
     Nav,
     Foot,
   },
+  data:function(){
+    return {
+      toggle:false,
+      toggleTwo:false,
+      toggleThree:false,
+    }
+  },
+  methods: {
+    chevronToggle(){
+      this.toggle = true;
+      
+     
+    },
+    chevronRight(){
+      this.toggle = false;
+      
+      
+    }
+  }
 };
 </script>
 
@@ -126,6 +165,9 @@ export default {
 @import "../scss/_components.scss";
 .wrapper {
   @include grid-column-auto;
+}
+.wrapperMobile {
+  display:none;
 }
 .pageHeader {
   height: 810px;
@@ -163,9 +205,13 @@ export default {
   background: #d3cfc347;
   @include center;
   flex-direction: column;
-  
+  justify-content: space-evenly;
   h2 {
     font-size: 2.25rem;
+  }
+  p {
+   width: 75%;
+   
   }
 }
 .roomView {
@@ -213,9 +259,18 @@ export default {
 }
 
 @media screen and (max-width: 500px) {
-  .wrapper {
- 
-  }
+  
+  .wrapperMobile {
+  display:block;
+  display: flex;
+}
+.chevronBoyOne {
+  margin-right: 24px;
+}
+.chevronBoyTwo {
+  margin-left: 24px;
+}
+
 
   .pageHeader {
     height: 290px;
@@ -253,7 +308,7 @@ export default {
 
   .roomView {
     .grid-container {
-      grid-template-rows: repeat(1, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       .card {
         display: none;
       }

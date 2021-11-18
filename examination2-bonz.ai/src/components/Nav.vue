@@ -4,15 +4,15 @@
       <nav class="navigation">
      <div class="titleWrap">
         <img class="logoBonz" src="../assets/logo/bonz.ai-logo-black_symbol.svg" alt="">
-       <h1 @click="goToMainPage">Bonz.Ai</h1>
+       <h1 class="navHone" @click="goToMainPage">Bonz.Ai</h1>
 
      </div>
   
     <img @click="toggleHamburgerOverlay" class="hamburgerButton" src="../assets/icons/hamburger.svg" alt="">
     <div class="navWrap">
-    <h2 @click="toggleToPage">Stay</h2>
+    <h2 >Stay</h2>
     <h2 >About</h2>
-    <button class="generalButton">Book</button>
+    <button @click="toggleToPage" class="button">Book</button>
     </div>
        
     </nav>
@@ -50,6 +50,7 @@ methods:{
 <style  lang="scss" scoped>
 @import '../scss/_mixins.scss';
 @import '../scss/_components.scss';
+.navHone:hover {cursor: pointer;}
 .titleWrap {
   widows: 172px;
   display: flex;

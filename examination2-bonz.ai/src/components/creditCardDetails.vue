@@ -31,6 +31,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+@media screen and (max-width:500px) { 
+    
+  }
 </style>
+
