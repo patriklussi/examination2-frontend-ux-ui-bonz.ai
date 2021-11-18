@@ -854,7 +854,7 @@ p {
 @media screen and (max-width: 500px) {
   .hamburgerOverlay {
     display: block;
-    height: 736px;
+    height: 100%;
     background: #0C251F;
     width: 84%;
     display: flex;

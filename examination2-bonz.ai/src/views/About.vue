@@ -5,11 +5,12 @@
     <div class="item-wrapper">
       <h1>Booking</h1>
       <bookingTab class="test"/>
-      <BookingCardOne class="testTwo"/>
+      <BookingCardOne v-on:addToCompleted="addToCompleted" class="testTwo"/>
       <BookingCardTwo class="testTwo"/>
       <BookingCardThree class="testTwo"/>
       <BookingCardFour class="testTwo"/>
-      <CompletedBookingCard class="testThree"  v-on:paymentDetails="toggleFunc" />
+      <h1 v-if="!toggleCompleted">Book a room!</h1>
+      <CompletedBookingCard v-if="toggleCompleted" class="testThree"  v-on:paymentDetails="toggleFunc" />
     </div>
   </div>
     <PaymentDetails v-if="!toggle"/>
@@ -28,7 +29,7 @@ import BookingCardOne from "../components/BookingCardOne.vue";
 import BookingCardTwo from "../components/BookingCardTwo.vue";
 import BookingCardThree from "../components/BookingCardThree.vue";
 import BookingCardFour from "../components/BookingCardFour.vue";
-import CompletedBookingCard from "../components/CompletedBookingCard.vue";
+import  CompletedBookingCard from "../components/CompletedBookingCard.vue";
 import CreditCardDetails from "../components/creditCardDetails.vue";
 import PaymentDetails from "../components/paymentDetails.vue";
 export default {
@@ -48,11 +49,15 @@ data:function(){
 return {
   toggle:true,
   toggleTwo:false,
+  toggleCompleted:false,
 }
 },
 methods:{
   toggleFunc(){
     console.log("Hello there");
+  },
+  addToCompleted(){
+    this.toggleCompleted = true;
   }
 }
 }

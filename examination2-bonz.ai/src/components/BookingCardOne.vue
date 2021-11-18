@@ -32,7 +32,7 @@
         <input class="blackCheckBox" type="radio" name="" id="" />
       </div>
       <p class="total">Total 1100sek</p>
-      <button class="button">Book</button>
+      <button @click="bookIt" class="button">Book</button>
     </article>
   </article>
 </section>
@@ -73,7 +73,11 @@
 
 <script>
 export default {
-
+methods:{
+  bookIt(){
+    this.$emit("addToCompleted");
+  }
+}
 }
 </script>
 

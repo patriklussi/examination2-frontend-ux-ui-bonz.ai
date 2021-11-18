@@ -1,5 +1,6 @@
 <template>
   <div class="nav-wrapper">
+    <Overlay class="overlay" v-on:turnOff="toggleHamburgerOverlayOff" v-if="toggleHamburger" />
       <nav class="navigation">
      <div class="titleWrap">
         <img class="logoBonz" src="../assets/logo/bonz.ai-logo-black_symbol.svg" alt="">
@@ -7,7 +8,7 @@
 
      </div>
   
-    <img class="hamburgerButton" src="../assets/icons/hamburger.svg" alt="">
+    <img @click="toggleHamburgerOverlay" class="hamburgerButton" src="../assets/icons/hamburger.svg" alt="">
     <div class="navWrap">
     <h2 @click="toggleToPage">Stay</h2>
     <h2 >About</h2>
@@ -19,13 +20,28 @@
 </template>
 
 <script>
+import Overlay from "../components/hamburgerMenu.vue";
 export default {
+  components: {
+    Overlay,
+  },
+  data:()=>{
+  return {
+    toggleHamburger:false,
+  }
+  },
 methods:{
   toggleToPage(){
     this.$router.push("/about");
   },
   goToMainPage(){
    this.$router.push("/");
+  },
+  toggleHamburgerOverlay(){
+   this.toggleHamburger = true;
+  },
+  toggleHamburgerOverlayOff(){
+     this.toggleHamburger = false;
   }
 }
 }
@@ -50,6 +66,9 @@ methods:{
   
 
 @media screen and (max-width:500px) {
+  .overlay {
+    position: absolute;
+  }
  .navigation {
    .navWrap {
      display:none;
@@ -75,6 +94,9 @@ methods:{
    display: block;
    margin-right: 18px;
    
+ }
+ .hamburgerButton:hover {
+   cursor: pointer;
  }
  }
  

@@ -8,7 +8,7 @@
     <p>Wed, Dec 22, 2021 - Sun, Dec 26, 2019 </p>
     <p>1 Adult</p>
     <p>4 nights</p>
-    <p>Room Type2</p>
+    <p>Room Type1</p>
     <p>Drone-delivered coffee included</p>
     </article>
     <article class="right">
@@ -33,7 +33,7 @@
 
     <p >Total 1100 SEK</p>
     </div>
-    <button @click="test()" class="mobileButton">Complete your booking</button>
+    <button @click="emitToAbout" class="mobileButton">Complete your booking</button>
 </section>
   </div>
 </template>
@@ -41,9 +41,9 @@
 <script>
 export default {
 methods:{
- test(){
-   console.log("Sup");
- }
+  emitToAbout(){
+      console.log("Helllo");
+  }
 }
 }
 </script>
