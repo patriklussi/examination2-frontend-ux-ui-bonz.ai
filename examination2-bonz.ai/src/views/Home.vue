@@ -333,10 +333,7 @@ export default {
           width: 263px;
         }
 
-        .generalButton {
-          width: 100%;
-          border-radius: 0;
-        }
+        
       }
     }
     h1 {
