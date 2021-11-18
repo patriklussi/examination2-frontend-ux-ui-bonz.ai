@@ -178,7 +178,7 @@ export default {
 
   .titleBox {
     border-bottom: 6px solid #08f7fe;
-    width: 642px;
+    width: 42%;
     display: flex;
     flex-direction: column;
     margin-left: 167px;
@@ -275,7 +275,7 @@ export default {
     height: 290px;
     .titleBox {
       border-bottom: 1px solid #08f7fe;
-      width: 249px;
+      width: 75%;
       margin: 0;
       margin-top: 37px;
       margin-left: 4px;
