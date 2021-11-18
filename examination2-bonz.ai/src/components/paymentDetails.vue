@@ -15,14 +15,18 @@
         <p class="pDetailsp">Please confirm that the costumer is atleast 18 years old!</p>
         <input class="blackCheckBox" type="radio">
     </article>
-    <button class="bookingButton">Continue</button>
-    <button class="mobileButton">Continue</button>
+    <button  @click="emitToParent" class="bookingButton">Continue</button>
+    <button  @click="emitToParent" class="mobileButton">Continue</button>
 </section>
 </template>
 
 <script>
 export default {
-
+methods:{
+  emitToParent(){
+    this.$emit("yoyo");
+  }
+}
 }
 </script>
 

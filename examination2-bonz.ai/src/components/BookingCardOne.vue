@@ -63,7 +63,7 @@
 <input class="blackCheckBox" type="radio" name="" id="" />
 </div>  
   <p class="mobilePVersionOne">Total 1100 SEK</p>
-<button class="mobileButton">Book now</button>
+<button @click="bookIt" class="mobileButton">Book now</button>
 
 </section>
 

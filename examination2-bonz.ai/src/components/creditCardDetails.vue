@@ -1,22 +1,27 @@
 <template>
-  <section class="paymentDetailsWrap">
-    <h1 class="h1Title">Costumer info</h1>
-    <article class="pdBox">
+  <section class="creditCardDetailsWrap">
+    <h1 class="h1Title">Payment details</h1>
+    <article class="cdBox">
         
-            <label height="73px" for="name">Name*</label>
-            <input id="name" placeholder="Enter name" type="text">
-            <label for="email">Email*</label>
-            <input id="email" placeholder="Enter email" type="text">
-            <label for="phone">Phone number</label>
-            <input id="email" placeholder="Enter phone number" type="text">
+            <label  class="labelText"  height="73px" for="name">Cardholder name</label>
+            <input  class="inputText" id="name"  type="text">
+            <label class="labelText" for="email">Card Number</label>
+            <input placeholder="XXXX-XXXX-XXXX" class="inputCardNumber " id="email" maxlength="16"   type="number">
+        
        
     </article>
-    <article class="rButtonBox">
-        <p class="pDetailsp">Please confirm that the costumer is atleast 18 years old!</p>
-        <input class="blackCheckBox" type="radio">
+    <article class="inputBox">
+        <div>
+        <label class="smallLabel" for="date">Valid thru</label>
+     <input placeholder="MM/YY" class="dateInput" id="date" type="text">
+    </div>
+    <div>
+     <label  class="smallLabel" for="ccv">CCV/CVC</label>
+     <input  placeholder="xxx" class="ccvInput" id="ccv" type="text">
+    </div>
     </article>
-    <button class="bookingButton">Continue</button>
-    <button class="mobileButton">Continue</button>
+    <button class="bookingButton">Book</button>
+    <button class="mobileButton">Book</button>
 </section>
 </template>
 
@@ -26,6 +31,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style>
 
 </style>

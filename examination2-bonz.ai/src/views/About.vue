@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
    <Nav/>
-  <div class="Stormcloak">
+  <div v-if="toggleWrap"  class="Stormcloak">
     <div class="item-wrapper">
       <h1>Booking</h1>
       <bookingTab class="test"/>
@@ -10,14 +10,12 @@
       <BookingCardThree class="testTwo"/>
       <BookingCardFour class="testTwo"/>
       <h1 v-if="!toggleCompleted">Book a room!</h1>
-      <CompletedBookingCard v-if="toggleCompleted" class="testThree"  v-on:paymentDetails="toggleFunc" />
+      <CompletedBookingCard v-if="toggleCompleted" class="testThree"  v-on:goToPayment="toggleFunc" />
     </div>
   </div>
-    <PaymentDetails v-if="!toggle"/>
-    <CreditCardDetails v-if="toggleTwo"/>
-      <Footer/>
-   
- 
+    <PaymentDetails  v-on:yoyo="toggleToNext" class="pmDetails"  v-if="toggler"/>
+    <CreditCardDetails class="ccDetails"  v-if="toggle"/>
+    <Footer/>
   </div>
 </template>
 
@@ -47,17 +45,27 @@ components: {
 },
 data:function(){
 return {
-  toggle:true,
-  toggleTwo:false,
+  toggle:false,
+  
   toggleCompleted:false,
+  toggler:false,
+  toggleWrap:true,
 }
 },
 methods:{
   toggleFunc(){
-    console.log("Hello there");
+    this.toggleCompleted = false;
+   this.toggler = true;
+     this.toggleWrap = false;
+
   },
   addToCompleted(){
     this.toggleCompleted = true;
+  
+  },
+  toggleToNext(){
+    this.toggle = true;
+    this.toggler = false;
   }
 }
 }
@@ -66,7 +74,16 @@ methods:{
 <style lang="scss" scoped>
 @import '../scss/_mixins.scss';
 .wrapper {
-  
+      .pmDetails {
+        margin:auto;
+        margin-bottom: 210px;
+        margin-top: 124px;
+      }
+      .ccDetails {
+        margin:auto;
+        margin-top: 124px;
+        margin-bottom: 319px;
+      }
       h1 {
         text-align: center;
         font-weight: 500;

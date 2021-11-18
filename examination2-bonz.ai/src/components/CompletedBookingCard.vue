@@ -17,7 +17,7 @@
     </article>
 </article>
 
-<button class="bookingButton">Complete your booking</button>
+<button @click="emitToAbout" class="bookingButton">Complete your booking</button>
 </section>
 
 <section class="mobileCard">
@@ -42,7 +42,7 @@
 export default {
 methods:{
   emitToAbout(){
-      console.log("Helllo");
+      this.$emit("goToPayment");
   }
 }
 }
