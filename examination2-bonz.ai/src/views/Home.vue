@@ -40,38 +40,44 @@
           </article>
         </article>
         <div class="wrapperMobile">
+          <img
+            class="chevronBoyOne"
+            @click="chevronRight"
+            src="../assets/icons/chevronLeft.svg"
+            alt=""
+          />
 
-          <img class="chevronBoyOne"   @click="chevronRight" src="../assets/icons/chevronLeft.svg" alt="">
+          <article v-if="!toggle" class="MobileCard">
+            <h2>Type 1</h2>
+            <img class="cardImg" src="../assets/photos/06-night.jpg" alt="" />
+            <p>
+              Lorem Ipsum is simply <br />
+              dummy text of the <br />
+              printing and typesetting <br />
+              industry.
+            </p>
+            <button class="mobileButton">Book</button>
+          </article>
+          <article v-if="toggle" class="MobileCard">
+            <h2>Type 2</h2>
+            <img class="cardImg" src="../assets/photos/02-night.jpg" alt="" />
+            <p>
+              Lorem Ipsum is simply <br />
+              dummy text of the <br />
+              printing and typesetting <br />
+              industry.
+            </p>
+            <button class="mobileButton">Book</button>
+          </article>
 
-
-           <article v-if="!toggle" class="MobileCard">
-          <h2>Type 1</h2>
-          <img class="cardImg" src="../assets/photos/06-night.jpg" alt="" />
-          <p>
-            Lorem Ipsum is simply <br />
-            dummy text of the <br />
-            printing and typesetting <br />
-            industry.
-          </p>
-          <button class="mobileButton">Book</button>
-        </article>
-           <article  v-if="toggle" class="MobileCard">
-          <h2>Type 2</h2>
-          <img class="cardImg" src="../assets/photos/02-night.jpg" alt="" />
-          <p>
-            Lorem Ipsum is simply <br />
-            dummy text of the <br />
-            printing and typesetting <br />
-            industry.
-          </p>
-          <button class="mobileButton">Book</button>
-        </article>
-
-
-          <img @click="chevronToggle"  class="chevronBoyTwo"  src="../assets/icons/chevronRight.svg" alt="">
-
+          <img
+            @click="chevronToggle"
+            class="chevronBoyTwo"
+            src="../assets/icons/chevronRight.svg"
+            alt=""
+          />
         </div>
-       
+
         <article class="card">
           <article class="left">
             <img class="cardImg" src="../assets/photos/01-night.jpg" alt="" />
@@ -138,25 +144,21 @@ export default {
     Nav,
     Foot,
   },
-  data:function(){
+  data: function () {
     return {
-      toggle:false,
-      toggleTwo:false,
-      toggleThree:false,
-    }
+      toggle: false,
+      toggleTwo: false,
+      toggleThree: false,
+    };
   },
   methods: {
-    chevronToggle(){
+    chevronToggle() {
       this.toggle = true;
-      
-     
     },
-    chevronRight(){
+    chevronRight() {
       this.toggle = false;
-      
-      
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -167,13 +169,13 @@ export default {
   @include grid-column-auto;
 }
 .wrapperMobile {
-  display:none;
+  display: none;
 }
 .pageHeader {
   height: 810px;
   //  @include center;
   // flex-direction: column;
- 
+
   .titleBox {
     border-bottom: 6px solid #08f7fe;
     width: 642px;
@@ -210,8 +212,7 @@ export default {
     font-size: 2.25rem;
   }
   p {
-   width: 75%;
-   
+    width: 75%;
   }
 }
 .roomView {
@@ -227,7 +228,7 @@ export default {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-   max-width: 1500px;
+    max-width: 1500px;
     row-gap: 51px;
   }
   .MobileCard {
@@ -259,18 +260,16 @@ export default {
 }
 
 @media screen and (max-width: 500px) {
-  
   .wrapperMobile {
-  display:block;
-  display: flex;
-}
-.chevronBoyOne {
-  margin-right: 24px;
-}
-.chevronBoyTwo {
-  margin-left: 24px;
-}
-
+    display: block;
+    display: flex;
+  }
+  .chevronBoyOne {
+    margin-right: 24px;
+  }
+  .chevronBoyTwo {
+    margin-left: 24px;
+  }
 
   .pageHeader {
     height: 290px;
